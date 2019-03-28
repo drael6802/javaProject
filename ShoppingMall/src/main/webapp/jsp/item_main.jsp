@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Index</title>
+<title>아이템 메인 폼</title>
 </head>
 <body>
-<jsp:forward page="templateMain.do" />
+안녕
 </body>
 </html>

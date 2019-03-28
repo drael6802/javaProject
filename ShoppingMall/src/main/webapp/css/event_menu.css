@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.wrap{}
+.wrap div{width:100%; text-align:center; font-size:20px; font-weight:700; color:#fff;}
+			
+.top_bar_fix{position:fixed; top:0; left:0; width:100%;}
+.pd_top_80{padding-top:80px;}
+
+.wrap .top_bn_zone{height:100px; background:#777; line-height:100px;}
+.wrap .top_fix_zone{height:80px; background:#d63232; line-height:80px;}
+.wrap .top_con_zone{height:1500px; background:#ededed; color:#888; text-align:center; font-size:70px;}

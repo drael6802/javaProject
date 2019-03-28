@@ -15,8 +15,8 @@ public class ShoppingController {
 	UserService userService;
 	
 	String viewPage = "viewPage";
-	String viewTemplate = "/jsp/main_template.jsp";
-	String subViewTemplate = "/jsp/sub_template.jsp";
+	String viewTemplate = "/jsp/Template_main.jsp";
+	String subViewTemplate = "/jsp/Template_sub.jsp";
 	
 	/*
 	@RequestMapping(value = "/test")
@@ -27,10 +27,10 @@ public class ShoppingController {
 	}
 	*/
 	
-	@RequestMapping(value = "/mainTemplate.do")
+	@RequestMapping(value = "/templateMain.do")
 	public String mainPage(Model model , UserVO vo) {
 		System.out.println("==========>mainTemplate");
-		userService.selectUserIdList(vo);
+		
 		model.addAttribute(viewPage, "shop_main_page.jsp");
 		return viewTemplate;
 	}
