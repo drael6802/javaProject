@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<div style="color: #000000;">
+	이벤트 배너
+</div>
 </body>
 </html>

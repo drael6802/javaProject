@@ -5,8 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>메인 템플레이트</title>
-
-
 </head>
 <body>
 	<!--메인 DIV  -->
@@ -20,18 +18,15 @@
 			<jsp:include page="event_menu.jsp"></jsp:include>
 		</div>
 		<!--중앙  -->
-		<div>
-			<jsp:include page="${viewPage }"></jsp:include>
-			
-			<div style="height: 1000px;">
-				안녕
-			</div>
-			
+		<div style="height: 1000px;">
+			<jsp:include page="event_banner.jsp"></jsp:include>
+			<jsp:include page="${viewPage }"></jsp:include>			
 		</div>
+		<!-- <div class="top_con_zone" id="fixNextTag" ></div> -->
 		<!--하단  -->
-		<!-- <div class="top_con_zone" id="fixNextTag" >
-			
-		</div> -->
+		<div>
+			<jsp:include page="/jsp/bottom.jsp"></jsp:include>
+		</div>
 	</div>
 </body>
 </html>

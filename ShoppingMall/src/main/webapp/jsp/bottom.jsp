@@ -5,10 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+</style>
 </head>
 <body>
 <div style="color: #000000;">
-	쇼핑몰 메인
+	하단
 </div>
 </body>
 </html>
