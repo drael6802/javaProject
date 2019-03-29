@@ -12,6 +12,7 @@
 	<!--메인 DIV  -->
 	<div class="wrap" align="center">
 		<!--상단  -->
+			<jsp:include page="NewFile.jsp"></jsp:include>
 		<div class="top_bn_zone">
 			상단 
 		</div>
@@ -20,12 +21,17 @@
 		</div>
 		<!--중앙  -->
 		<div>
-			<jsp:include page="item_main.jsp"></jsp:include>
+			<jsp:include page="${viewPage }"></jsp:include>
+			
+			<div style="height: 1000px;">
+				안녕
+			</div>
+			
 		</div>
 		<!--하단  -->
-		<div class="top_con_zone" id="fixNextTag" >
-			하단
-		</div>
+		<!-- <div class="top_con_zone" id="fixNextTag" >
+			
+		</div> -->
 	</div>
 </body>
 </html>

@@ -31,24 +31,32 @@ public class ShoppingController {
 	public String mainPage(Model model , UserVO vo) {
 		System.out.println("==========>mainTemplate");
 		
-		model.addAttribute(viewPage, "shop_main_page.jsp");
+		model.addAttribute(viewPage, "shop_main.jsp");
 		return viewTemplate;
 	}
 	
 	//로그인 폼 이동
-	@RequestMapping(value = "/shopLogin.do")
-	public String shopLoginPage(Model model ) {
-		System.out.println("==========>shopLoginPage");
-		model.addAttribute(viewPage, "user_login_form.jsp");
+	@RequestMapping(value = "/userLogin.do")
+	public String userLogin(Model model ) {
+		System.out.println("==========>userLogin");
+		model.addAttribute(viewPage, "user_login.jsp");
 		return subViewTemplate;
 	}
 	
 	//회원가입 폼 이동
-		@RequestMapping(value = "/shopJoin.do")
-		public String shopJoinPage(Model model ) {
-			System.out.println("==========>shopLoginPage");
-			model.addAttribute(viewPage, "user_join_form.jsp");
-			return subViewTemplate;
-		}
+	@RequestMapping(value = "/userJoin.do")
+	public String userJoin(Model model ) {
+		System.out.println("==========>userJoin");
+		model.addAttribute(viewPage, "user_join.jsp");
+		return subViewTemplate;
+	}
+	
+	//회원가입 폼 프로세스
+	@RequestMapping(value = "/userJoinProc.do")
+	public String userJoinProc(Model model ) {
+		System.out.println("==========>userJoin");
+		model.addAttribute(viewPage, "shop_main.jsp");
+		return subViewTemplate;
+	}
 
 }

@@ -20,7 +20,7 @@
 header {
 	min-width: 300px;
 	height: 80px;
-	background-color: #15a181;
+	background-color: #ed6161;
 	font-size: 30px;
 	color: white;
 	position: relative;
@@ -35,7 +35,7 @@ header p {
 
 #dm_ul {
 	min-width: 300px;
-	background-color: #15a181;
+	background-color: #ed6161;
 	text-align: center;
 }
 
@@ -47,7 +47,7 @@ header p {
 
 .dropmenu ul ul li {
 	display: block;
-	background-color: #15a181;
+	background-color: #ed6161;
 	color: white;
 }
 
@@ -65,7 +65,7 @@ header p {
 }
 
 .dropmenu ul li a:hover {
-	background-color: #15a181;
+	background-color: #ed6161;
 	color: gray;
 }
 </style>
@@ -75,7 +75,7 @@ header p {
 	<section>
 		<div class="dropmenu">
 			<ul id="dm_ul">
-				<li><a href="mainTemplate.do">메인폼</a></li>
+				<li><a href="templateMain.do">메인폼</a></li>
 				<li><a href="#">메뉴1</a>
 					<ul>
 						<li><a href="">test1</a></li>
@@ -84,7 +84,15 @@ header p {
 						<li><a href="">test4</a></li>
 					</ul>
 				</li>
-				<li><a href="shopLogin.do">로그인</a></li>
+				<li><a href="#">메뉴2</a>
+					<ul>
+						<li><a href="">test1</a></li>
+						<li><a href="">test2</a></li>
+						<li><a href="">test3</a></li>
+						<li><a href="">test4</a></li>
+					</ul>
+				</li>
+				<li><a href="userLogin.do">로그인</a></li>
 			</ul>
 		</div>
 	</section>
