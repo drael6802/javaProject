@@ -92,7 +92,6 @@ header p {
 						<li><a href="">test4</a></li>
 					</ul>
 				</li>
-				<li><a href="userLogin.do">로그인</a></li>
 			</ul>
 		</div>
 	</section>

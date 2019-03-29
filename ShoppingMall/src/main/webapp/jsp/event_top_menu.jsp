@@ -5,9 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-	<style type="text/css">
+<style type="text/css">
 	.eld{
-		background-color: #ed6161;
 		margin: 0;
 		padding: 0;
 	}
@@ -19,12 +18,21 @@
 		width: 800px;
 		height: 30px;	
 	}
-	</style>
+	a {
+		color: #000000;
+		text-decoration: none;
+	}
+</style>
 </head>
 <body>
-	<div align="center">
-		<div class="eld in">
-			안녕
+	<div class="eld in">
+		<div style="text-align: right; font-size: small;">
+			<div style="height: 5px;"></div>
+			<a href="userLogin.do">로그인</a>&nbsp;
+			<a href="">회원가입</a>&nbsp;
+			<a href="">마이페이지</a>&nbsp;
+			<a href="">장바구니</a>&nbsp;
+			<a href="">고객센터</a>&nbsp;&nbsp;
 		</div>
 	</div>
 </body>
