@@ -25,7 +25,7 @@
 		<!-- <div class="top_con_zone" id="fixNextTag" ></div> -->
 		<!--하단  -->
 		<div>
-			<jsp:include page="/jsp/bottom.jsp"></jsp:include>
+			<jsp:include page="bottom.jsp"></jsp:include>
 		</div>
 	</div>
 </body>

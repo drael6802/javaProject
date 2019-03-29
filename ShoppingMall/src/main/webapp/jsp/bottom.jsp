@@ -9,8 +9,10 @@
 </style>
 </head>
 <body>
-<div style="color: #000000;">
-	하단
+<div style="height: 80px;"></div>
+<hr>
+<div style="color: #000000; height: 150px;">
+	<h2>하단</h2>
 </div>
 </body>
 </html>

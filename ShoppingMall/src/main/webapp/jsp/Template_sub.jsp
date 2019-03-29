@@ -23,6 +23,9 @@
 		<div>
 			<jsp:include page="${viewPage }"></jsp:include>
 		</div>
+		<div>
+			<jsp:include page="bottom.jsp"></jsp:include>
+		</div>
 		<!--하단  -->
 		<!-- <div class="top_con_zone" id="fixNextTag" >
 			하단

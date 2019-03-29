@@ -9,7 +9,6 @@
 	table {
 		margin: auto;
 		text-align: center;
-		width: 30%;
 	}
 	input {
 		width: 305px;
@@ -25,26 +24,26 @@
 		background: none;
 	}
 	.otherBtn {
-		width: 98px;
+		width: 97px;
 		height: 50px;
 		border: 1px solid;
 		background: none;
 	}
-	h2 , h5{
+	h2,h5{
 		color:#000;
 	}
 </style>
 </head>
 <body>
-<div style="height: 20px;"></div>
+<div style="height: 80px;"></div>
 <form action="">
 	<table>
 		<tr>		
 			<td>
 				<h2>로그인</h2>
-				<div>
-					<h5>환영합니다! WSSW회원으로 다양한 혜택을 받아보세요!</h5>
-				</div>
+				<div style="height: 15px;"></div>
+				<h5>환영합니다! WSSW회원으로 다양한 혜택을 받아보세요!</h5>
+				<div style="height: 30px;"></div>
 			</td>
 		</tr>
 		<tr>		

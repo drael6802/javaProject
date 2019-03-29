@@ -29,10 +29,10 @@
 		<div style="text-align: right; font-size: small;">
 			<div style="height: 5px;"></div>
 			<a href="userLogin.do">로그인</a>&nbsp;
-			<a href="">회원가입</a>&nbsp;
+			<a href="userJoin.do">회원가입</a>&nbsp;
 			<a href="">마이페이지</a>&nbsp;
 			<a href="">장바구니</a>&nbsp;
-			<a href="">고객센터</a>&nbsp;&nbsp;
+			<a href="">고객센터</a>&nbsp;&nbsp;&nbsp;&nbsp;
 		</div>
 	</div>
 </body>
