@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE HTML>
 <html lang="ko">
 <head>
@@ -10,7 +11,7 @@
 	<script type="text/javascript" src="js/event_menu.js"></script>
 	<!--CSS속성  -->
 	<link rel="stylesheet" href="css/event_menu.css" >
-
+	
 <style media="screen">
 * {
 	margin: 0;
