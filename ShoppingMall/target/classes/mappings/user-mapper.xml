@@ -13,6 +13,7 @@
 		<result column="USER_ADMIN" 			property="userAdmin"/>
 		<result column="USER_BIRTH" 			property="userBirth"/>
 		<result column="USER_JOINDAY" 			property="userJoinday"/>
+		<result column="USER_NAME" 				property="userName"/>
 	</resultMap>
 	
 	<select id="selectUserIdList" resultMap="user">
@@ -29,6 +30,37 @@
 				, USER_JOINDAY
 		FROM SHOPPING_USER
 	</select>
+	
+	<insert id="insertUser">
+		INSERT INTO SPRING_BOARD
+		(
+			USER_CODE
+			, USER_ID
+			, USER_PASSWORD
+			, USER_PHONE
+			, USER_EMAIL
+			, USER_ADDRESS
+			, USER_ADDRESS_INFO
+			, USER_ADMIN
+			, USER_BIRTH
+			, USER_JOINDAY
+			, USER_NAME
+		) VALUES (
+			(SELECT NVL(MAX(USER_CODE) + 1, 1) FROM SPRING_BOARD)
+			, #{userId}
+			, #{userPassword}
+			, #{userPhone}
+			, #{userEmail}
+			, #{userAddress}
+			, #{userAddress_info}
+			, 'n'
+			, #{userBirth}
+			, SYSDATE
+			, #{userName}
+		)
+	</insert>
+	
+	
 	
 	
 </mapper>

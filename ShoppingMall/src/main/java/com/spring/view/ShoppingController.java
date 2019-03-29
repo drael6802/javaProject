@@ -53,9 +53,13 @@ public class ShoppingController {
 	
 	//회원가입 폼 프로세스
 	@RequestMapping(value = "/userJoinProc.do")
-	public String userJoinProc(Model model ) {
+	public String userJoinProc(Model model , UserVO vo ) {
 		System.out.println("==========>userJoin");
 		model.addAttribute(viewPage, "shop_main.jsp");
+		userService.insertUser(vo);
+		System.out.println(vo.getUserId());
+		
+		
 		return subViewTemplate;
 	}
 

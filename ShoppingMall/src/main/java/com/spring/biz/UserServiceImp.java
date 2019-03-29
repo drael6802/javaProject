@@ -17,4 +17,9 @@ public class UserServiceImp implements UserService {
 	public List<UserVO> selectUserIdList(UserVO vo) {
 		return sqlSession.selectList("selectUserIdList" , vo);
 	}
+
+	@Override
+	public int insertUser(UserVO vo) {
+		return sqlSession.insert("insertUser", vo);
+	}
 }

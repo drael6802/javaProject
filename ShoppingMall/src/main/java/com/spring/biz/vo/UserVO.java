@@ -7,6 +7,7 @@ public class UserVO {
 	private int userCode;
 	private String userId;
 	private String userPassword;
+	private String userName;
 	private String userPhone;
 	private String userEmail;
 	private String userAddress;
@@ -76,6 +77,12 @@ public class UserVO {
 	}
 	public void setUserJoinday(Date userJoinday) {
 		this.userJoinday = userJoinday;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	
 	
