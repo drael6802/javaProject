@@ -13,6 +13,7 @@
 		border-collapse: collapse;
 		border-left: none;
 		border-right: none;
+		color: #000000;
 	}
 	input {
 		width: 200px;
@@ -32,16 +33,14 @@
 		border: 1px solid;
 		background: none;
 	}
-	h2{
-		color:#000;
-	}
 </style>
 </head>
 <body>
 <div style="height: 10px;"></div>
-<div align="center" style="margin: auto;">
+<div align="center" style="margin: auto; color: #000000;">
 	<h2>회원가입</h2>
 </div>
+<div style="height: 10px;"></div>
 <form action="">
 	<table border="1">
 		<tr>

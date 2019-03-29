@@ -12,7 +12,7 @@
 	<!--메인 DIV  -->
 	<div class="wrap" align="center">
 		<!--상단  -->
-			<jsp:include page="NewFile.jsp"></jsp:include>
+			<jsp:include page="event_top_menu.jsp"></jsp:include>
 		<div class="top_bn_zone">
 			상단 
 		</div>
