@@ -64,7 +64,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td>
+			<td> 
 				<input type="button" value="회원가입" class="otherBtn" onclick="location.href='userJoin.do'">
 				<input type="button" value="아이디찾기" class="otherBtn">
 				<input type="button" value="비밀번호찾기" class="otherBtn">
