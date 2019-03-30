@@ -8,7 +8,8 @@
 </head>
 <body>
 <div style="color: #000000;">
-	쇼핑몰 메인
+	쇼핑몰 메인 **
+	${sessionScope.userInfo.userId }
 </div>
 </body>
 </html>

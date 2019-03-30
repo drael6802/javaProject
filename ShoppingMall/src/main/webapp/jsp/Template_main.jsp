@@ -20,7 +20,8 @@
 		<!--중앙  -->
 		<div style="height: 1000px;">
 			<jsp:include page="event_banner.jsp"></jsp:include>
-			<jsp:include page="${viewPage }"></jsp:include>			
+			<jsp:include page="${viewPage }"></jsp:include>	
+				
 		</div>
 		<!-- <div class="top_con_zone" id="fixNextTag" ></div> -->
 		<!--하단  -->

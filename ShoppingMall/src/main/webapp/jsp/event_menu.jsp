@@ -7,7 +7,7 @@
 <title>스크롤하면 상단 영역 고정</title>
 	<!-- 제이쿼리 -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<!--제이쿼리 스크립트 -->
+	<!--제이쿼리 스크립트 경로 -->
 	<script type="text/javascript" src="js/event_menu.js"></script>
 	<!--CSS속성  -->
 	<link rel="stylesheet" href="css/event_menu.css" >

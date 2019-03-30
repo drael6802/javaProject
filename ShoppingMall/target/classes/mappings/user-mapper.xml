@@ -16,6 +16,15 @@
 		<result column="USER_NAME" 				property="userName"/>
 	</resultMap>
 	
+	<select id="selectLogin" resultMap="user">
+		SELECT USER_ID 
+				,USER_PASSWORD
+		FROM SHOPPING_USER
+		WHERE USER_ID = #{userId}
+		AND USER_PASSWORD = #{userPassword}
+				
+	</select>
+	
 	<select id="selectUserIdList" resultMap="user">
 		SELECT 
 				USER_CODE
@@ -59,6 +68,12 @@
 			, #{userName}
 		)
 	</insert>
+	
+	<select id="selectIdChcek" resultMap="user">
+		SELECT USER_ID 
+		FROM SHOPPING_USER
+		WHERE USER_ID = #{userId}
+	</select>
 	
 	
 	

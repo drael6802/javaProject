@@ -5,6 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>JOIN</title>
+	<!-- 제이쿼리 -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<!--제이쿼리 스크립트 경로 -->
+	<script type="text/javascript" src="js/user_join.js?ver=2"></script>
+	<!--CSS속성  -->
+	<link rel="stylesheet" href="" >
 <style type="text/css">
 	table {
 		margin: auto;
@@ -47,8 +53,11 @@
 			<td class="title">
 				아이디
 			</td>
-			<td class="content">
-				<input type="text" id="userId" name="userId"/>
+			<td class="content" >
+				<div id="idContentDIV">
+					<input type="text" id="userId" name="userId" required />
+					<input type="button" id="idCheckBtn" name="" value="중복체크">
+				</div>
 			</td>
 		</tr>
 		<tr>
@@ -56,7 +65,7 @@
 				비밀번호
 			</td>
 			<td>
-				<input type="password" id="userPassword" name="userPassword"/>
+				<input type="password" id="userPassword" name="userPassword" required />
 			</td>
 		</tr>
 		<tr>
@@ -64,7 +73,9 @@
 				비밀번호 확인
 			</td>
 			<td>
-				<input type="text" id="" name=""/>
+				<input type="text" id="userPasswordCheck" name="" required />
+				<div class="alert alert-danger" id="alert-danger" style="color: red;" >비밀번호가 일치하지 않습니다.</div>
+				<div class="alert alert-success" id="alert-success" style="color: green;">비밀번호가 일치합니다.</div>
 			</td>
 		</tr>
 		<tr>
@@ -72,14 +83,14 @@
 				이름
 			</td>
 			<td>
-				<input type="text" id="userName" name="userName"/>
+				<input type="text" id="userName" name="userName" required />
 			</td>
 		<tr>
 			<td class="title">
 				주소
 			</td>
 			<td>
-				<input type="text" id="userAddress" name="userAddress"/><br>
+				<input type="text" id="userAddress" name="userAddress" required /><br>
 				<input type="text" id="userAddress" name="userAddress_info"/>
 			</td>
 		</tr>
@@ -96,7 +107,7 @@
 				전화번호
 			</td>
 			<td>
-				<input type="tel" id="userPhone" name="userPhone"/>
+				<input type="tel" id="userPhone" name="userPhone" required/>
 			</td>
 		</tr>
 		<tr>
@@ -104,7 +115,7 @@
 				이메일
 			</td>
 			<td>
-				<input type="text" id="userEmail" name="userEmail" style="width: 150px;"/>@<input type="text" id="" name="" style="width: 150px;"/>
+				<input type="text" id="userEmail" name="userEmail" style="width: 150px; required "/> @ <input type="text" id="" name=""  style="width: 150px;" required />
 			</td>
 		</tr>
 	</table>
@@ -112,7 +123,7 @@
 		<tr>
 			<td>
 				<div style="height: 10px;"></div>
-				<input type="submit" value="회원가입" class="joinBtn"/>
+				<input type="button" id="joinBtn" value="회원가입" class="joinBtn"/>
 			</td>
 		</tr>
 	</table>

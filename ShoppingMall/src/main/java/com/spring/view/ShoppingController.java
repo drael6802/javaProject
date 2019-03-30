@@ -1,10 +1,12 @@
 package com.spring.view;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.spring.biz.UserService;
 import com.spring.biz.vo.UserVO;
@@ -42,6 +44,30 @@ public class ShoppingController {
 		model.addAttribute(viewPage, "user_login.jsp");
 		return subViewTemplate;
 	}
+
+	//로그인 폼 프로세스
+	@RequestMapping(value = "/userLoginProc.do")
+	public String userLoginProc(Model model , UserVO vo , HttpSession session) {
+		System.out.println("==========>userLogin");
+		model.addAttribute(viewPage, "user_login.jsp");
+		vo = userService.loginUser(vo);
+
+			if (vo != null) {
+				session.setAttribute("userInfo", vo);
+				System.out.println( "세션값 = " +session.getId());
+				return "templateMain.do";
+			}
+		return subViewTemplate;
+	}
+	
+	//로그아웃 프로세스 logout.do
+	@RequestMapping(value = "/userLogout.do")
+	public String userLogout(Model model , HttpSession session) {
+		System.out.println("==========>userLogout");
+		session.invalidate();
+		model.addAttribute(viewPage, "shop_main.jsp");
+		return viewTemplate;
+	}
 	
 	//회원가입 폼 이동
 	@RequestMapping(value = "/userJoin.do")
@@ -49,6 +75,23 @@ public class ShoppingController {
 		System.out.println("==========>userJoin");
 		model.addAttribute(viewPage, "user_join.jsp");
 		return subViewTemplate;
+	}
+	
+	//회원가입 ID 중복체크 프로세스
+	@ResponseBody
+	@RequestMapping(value = "/idCheck.do")
+	public String idCheck(UserVO vo) {
+		System.out.println("==========>idCheck");
+		vo = userService.idChcek(vo);
+		
+		if (vo == null || "".equals(vo)) {
+			return null;
+		}else {
+			return vo.getUserId();
+		}
+		
+
+		
 	}
 	
 	//회원가입 폼 프로세스

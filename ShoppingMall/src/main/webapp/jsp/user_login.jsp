@@ -36,7 +36,7 @@
 </head>
 <body>
 <div style="height: 80px;"></div>
-<form action="">
+<form action="userLoginProc.do" method="post">
 	<table>
 		<tr>		
 			<td>
@@ -48,12 +48,12 @@
 		</tr>
 		<tr>		
 			<td>
-				<input type="text" id="" name="" placeholder="아이디"/>
+				<input type="text" id="userId" name="userId" placeholder="아이디" autofocus required />
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<input type="password" id="" name="" placeholder="비밀번호"/>
+				<input type="password" id="userPassword" name="userPassword" placeholder="비밀번호" required/>
 			</td>
 		</tr>
 		<tr>

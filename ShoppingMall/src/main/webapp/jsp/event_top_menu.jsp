@@ -29,8 +29,15 @@
 	<div class="eld in">
 		<div style="text-align: right; font-size: small;">
 			<div style="height: 5px;"></div>
-			<a href="userLogin.do">로그인</a>&nbsp;
-			<a href="userJoin.do">회원가입</a>&nbsp;
+				<c:choose>
+					<c:when test="${empty sessionScope.userInfo }">
+						<a href="userLogin.do">로그인</a>&nbsp;
+						<a href="userJoin.do">회원가입</a>&nbsp;
+					</c:when>
+					<c:otherwise>
+						<a href="userLogout.do">로그아웃</a>
+					</c:otherwise>
+				</c:choose>			
 			<a href="">마이페이지</a>&nbsp;
 			<a href="">장바구니</a>&nbsp;
 			<a href="">고객센터</a>&nbsp;&nbsp;&nbsp;&nbsp;

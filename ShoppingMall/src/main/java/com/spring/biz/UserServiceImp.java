@@ -17,9 +17,19 @@ public class UserServiceImp implements UserService {
 	public List<UserVO> selectUserIdList(UserVO vo) {
 		return sqlSession.selectList("selectUserIdList" , vo);
 	}
-
+	//회원 가입
 	@Override
 	public int insertUser(UserVO vo) {
 		return sqlSession.insert("insertUser", vo);
+	}
+	//회원 로그인
+	@Override
+	public UserVO loginUser(UserVO vo) {
+		return sqlSession.selectOne("selectLogin" , vo);
+	}
+	//회원 아이디 체크
+	@Override
+	public UserVO idChcek(UserVO vo) {
+		return sqlSession.selectOne("selectIdChcek", vo);
 	}
 }
