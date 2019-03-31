@@ -89,21 +89,20 @@ public class ShoppingController {
 		}else {
 			return vo.getUserId();
 		}
-		
-
-		
 	}
 	
 	//회원가입 폼 프로세스
+	@ResponseBody
 	@RequestMapping(value = "/userJoinProc.do")
-	public String userJoinProc(Model model , UserVO vo ) {
+	public int userJoinProc(Model model , UserVO vo ) {
 		System.out.println("==========>userJoin");
 		model.addAttribute(viewPage, "shop_main.jsp");
-		userService.insertUser(vo);
+		int result = userService.insertUser(vo);
 		System.out.println(vo.getUserId());
-		
-		
-		return subViewTemplate;
+		System.out.println(vo.toString());
+		//userService.insertUser(vo);
+		//return 0 ;
+		return result;
 	}
 
 }

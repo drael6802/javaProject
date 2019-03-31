@@ -84,6 +84,14 @@ public class UserVO {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
+	@Override
+	public String toString() {
+		return "UserVO [userCode=" + userCode + ", userId=" + userId + ", userPassword=" + userPassword + ", userName="
+				+ userName + ", userPhone=" + userPhone + ", userEmail=" + userEmail + ", userAddress=" + userAddress
+				+ ", userAddress_info=" + userAddress_info + ", userAdmin=" + userAdmin + ", userBirth=" + userBirth
+				+ ", userJoinday=" + userJoinday + "]";
+	}
+	
 	
 	
 }

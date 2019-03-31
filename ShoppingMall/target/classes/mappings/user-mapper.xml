@@ -49,7 +49,6 @@
 			, USER_PHONE
 			, USER_EMAIL
 			, USER_ADDRESS
-			, USER_ADDRESS_INFO
 			, USER_ADMIN
 			, USER_BIRTH
 			, USER_JOINDAY
@@ -61,7 +60,6 @@
 			, #{userPhone}
 			, #{userEmail}
 			, #{userAddress}
-			, #{userAddress_info}
 			, 'n'
 			, #{userBirth}
 			, SYSDATE
