@@ -8,13 +8,13 @@
 </head>
 <body>
 	<!--메인 DIV  -->
-	<div class="wrap" align="center">
+	<div align="center">
 		<!--상단  -->
 			<jsp:include page="event_top_menu.jsp"></jsp:include>
-		<div class="top_bn_zone">
-			상단 
+		<div class="top_bn_zone" style="height: 100px; background-color: gray;">
+			<jsp:include page="search_menu.jsp"></jsp:include>
 		</div>
-		<div class="top_fix_zone" id="topBar">
+		<div id="topBar">
 			<jsp:include page="event_menu.jsp"></jsp:include>
 		</div>
 		<!--중앙  -->

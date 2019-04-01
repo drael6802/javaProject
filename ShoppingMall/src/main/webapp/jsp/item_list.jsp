@@ -4,12 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>ITEM_LIST</title>
 </head>
 <body>
-<div style="color: #000000; height: 1000px;">
-	쇼핑몰 메인 **
-	${sessionScope.userInfo.userId }
-</div>
+<table>
+	<tr>
+		<td>
+			<h2>상품리스트</h2>
+		</td>
+	</tr>
+</table>
 </body>
 </html>
