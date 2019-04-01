@@ -135,14 +135,17 @@
 	$('#emailSelecter').on('change ', function(){
 		var emailSelecter = $('#emailSelecter option:selected').text();
 		if (emailSelecter == '직접입력') {
-			alert(emailSelecter);
 			//$('#userEmail1').next().remove();
 			//var str = '';
 			//str += '<input type="text" id="userEmail2" name="userEmail2"  style="width: 150px;" required />'
-			//$('#userEmail1').apter(str);
-			
+			//$('#userEmail1').parent().after(str);
+			$("#userEmail2").prop("disabled",false); 
+		}
+		else {
+			$("#userEmail2").prop("disabled",true); 
 		}
 	});
+	
 });
 
 //함수
@@ -172,13 +175,16 @@
 						alert('이미사용중인 ID 입니다.');
 						idCheck = 'N';
 					}else{
-						alert('사용가능한 아이디 입니다.');
-						$('#idContentDIV').empty();
-						var str = '';
-						str += '<input type="text" id="userId" name="userId" value="' + userId + '" readonly />';
-						str += '<input type="button" id="reIdCheckBtn" name="" value="다시작성">';
-						$('#idContentDIV').append(str);
-						idCheck = 'Y';
+						var isReg = confirm(' 사용가능한 아이디 입니다. \n 등록하시겠습니까?')
+						if(isReg){
+							//alert('사용가능한 아이디 입니다.');
+							$('#idContentDIV').empty();
+							var str = '';
+							str += '<input type="text" id="userId" name="userId" value="' + userId + '" readonly />';
+							str += '<input type="button" id="reIdCheckBtn" name="" value="다시작성">';
+							$('#idContentDIV').append(str);
+							idCheck = 'Y';
+						}
 					}
 				},
 				error: function(){
@@ -219,7 +225,7 @@
 				$("#alert-danger").show();
 				$("#submit").attr("disabled", "disabled");
 				passwordCheck = 'N';
-			}    
+			}
 		}
 		return passwordCheck;
 	};

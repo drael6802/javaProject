@@ -8,7 +8,7 @@
 	<!-- 제이쿼리 -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<!--제이쿼리 스크립트 경로 -->
-	<script type="text/javascript" src="js/user_join.js?ver=16"></script>
+	<script type="text/javascript" src="js/user_join.js?ver=17"></script>
 	<!--CSS속성  -->
 	<link rel="stylesheet" href="" >
 	
@@ -93,6 +93,7 @@ function sample6_execDaumPostcode() {
 		border: 1px solid;
 		background: none;
 	}
+	
 </style>
 </head>
 <body>
@@ -177,7 +178,7 @@ function sample6_execDaumPostcode() {
 			</td>
 			<td>
 				<input type="email" id="userEmail1" name="userEmail1" style="width: 150px; required "/>
-				<!-- <input type="text" id="userEmail2" name="userEmail2"  style="width: 150px;" required /> -->
+				<input type="text" id="userEmail2" name="userEmail2"  style="width: 150px;" required disabled />
 				<select id="emailSelecter">
 					<option>naver.com</option>
 					<option>naver.com</option>
@@ -196,7 +197,6 @@ function sample6_execDaumPostcode() {
 			</td>
 		</tr>
 	</table>
-	
 	
 </form>
 </body>
